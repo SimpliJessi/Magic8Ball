@@ -37,7 +37,8 @@ else:
 
 if name == "":
   print("Question: " + question)
+elif question == "":
+  print("You did not ask a question.")
 else:
   print(name + " asks: " + question)
-  
-print("Magic 8-Ball's answer: " + answer)
+  print("Magic 8-Ball's answer: " + answer)
