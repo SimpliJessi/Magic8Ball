@@ -1,17 +1,16 @@
 import random
 
-# name of person asking question
+# Who asks the Great Magic 8 Ball a question!
 name = input("What is your name? ")
 
-# question
+# The unknown question
 question = input("What is your question? ")
 
-# answer
+# Magic 8 Ball says this
 answer = ""
 
-# random number generated between 1 and 9
-random_number = random.randint(1, 9)
-# print(random_number)
+# random number generated between 1 and 10
+random_number = random.randint(1, 10)
 
 if random_number == 1:
   answer = "Yes - definitely!"
@@ -31,8 +30,10 @@ elif random_number == 8:
   answer = "Outlook not so good."
 elif random_number == 9:
   answer = "Very doubtful."
+elif random_number == 10:
+  answer = "You've got to be kidding me, right?"
 else:
   print("Error")
 
-print(name + " asks: " + question)
+# print(name + " asks: " + question)
 print("Magic 8-Ball's answer: " + answer)
